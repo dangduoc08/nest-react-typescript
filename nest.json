@@ -1,0 +1,38 @@
+{
+  "include": [
+    "backend/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "webpack",
+    "*build",
+    "**/*spec.ts",
+    "frontend/**/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "backend_build",
+    "target": "ES2019",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "incremental": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "noFallthroughCasesInSwitch": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "importHelpers": true
+  }
+}

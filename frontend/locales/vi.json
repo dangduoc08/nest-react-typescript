@@ -1,0 +1,27 @@
+{
+  "header": {
+    "logout": "Đăng xuất",
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt",
+    "profile": "Thông tin",
+    "myAccount": "Tài khoản"
+  },
+  "navigator": {
+    "dashboard": "Tổng Quan",
+    "integratedChannels": "Tích Hợp Sàn",
+    "settings": "Cấu Hình",
+    "tiki": "Tiki",
+    "shopee": "Shopee",
+    "lazada": "Lazada"
+  },
+  "notFound": {
+    "addressNotFound": "Không có trang nào tại địa chỉ này.",
+    "checkURL": "Kiểm tra URL và thử lại."
+  },
+  "notification": {
+    "success": "Thao tác thành công",
+    "info": "Thông tin thêm",
+    "warning": "Có gì đó không ổn",
+    "error": "Thao tác xảy ra lỗi"
+  }
+}

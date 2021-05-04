@@ -1,0 +1,10 @@
+{
+  "watch": [
+    "backend/**/*.ts"
+  ],
+  "ext": "ts,json",
+  "ignore": [
+    "src/**/*.spec.ts"
+  ],
+  "exec": "ts-node --project nest.json ./backend/app.main.ts"
+}

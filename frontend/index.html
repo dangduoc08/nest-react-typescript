@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Omnichannel customer service and engagement platform" />
+  <link rel="shortcut icon" href="/public/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <title>Base App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <style type="text/css">
+      body {
+        margin: 0px;
+        background-color: #fff;
+      }
+
+      .spinner {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 15%;
+
+      }
+
+      h3 {
+        color: #474747;
+        font-weight: normal;
+        font-family: 'Roboto'
+      }
+
+      .spinner__component {
+        display: inline-block;
+        animation: circular-rotate 1.4s linear infinite;
+      }
+
+      .spinner--primary {
+        color: #00326f;
+      }
+
+      .spinner__svg {
+        display: block;
+      }
+
+      .spinner--circle {
+        animation: circular-dash 1.4s ease-in-out infinite;
+        stroke: currentColor;
+        stroke-dasharray: 80px 200px;
+        stroke-dashoffset: 0px;
+      }
+
+      @keyframes circular-rotate {
+        0% {
+          transform-origin: 50% 50%;
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes circular-dash {
+        0% {
+          stroke-dasharray: 1px, 200px;
+          stroke-dashoffset: 0px;
+        }
+
+        50% {
+          stroke-dasharray: 100px, 200px;
+          stroke-dashoffset: -15px;
+        }
+
+        100% {
+          stroke-dasharray: 100px, 200px;
+          stroke-dashoffset: -125px;
+        }
+      }
+    </style>
+    <div class="spinner">
+      <div class="spinner__component spinner--primary" role="progressbar" style="width: 40px; height: 40px;">
+        <svg class="spinner__svg" viewBox="22 22 44 44">
+          <circle class="spinner--circle" cx="44" cy="44" r="18" fill="none" stroke-width="4"></circle>
+        </svg>
+      </div>
+      <h3>Vui lòng đợi giây lát...</h3>
+    </div>
+  </div>
+</body>
+
+</html>

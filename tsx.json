@@ -1,0 +1,59 @@
+{
+  "include": [
+    "frontend/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "webpack",
+    "*build",
+    "**/*spec.ts",
+    "backend/**/*"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@store": [
+        "frontend/store"
+      ],
+      "@utils": [
+        "frontend/utils"
+      ],
+      "@containers/*": [
+        "frontend/containers/*"
+      ],
+      "@components/*": [
+        "frontend/components/*"
+      ],
+      "@services/*": [
+        "frontend/services/*"
+      ],
+      "@commons/*": [
+        "frontend/commons/*"
+      ]
+    },
+    "target": "ES2019",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "incremental": true,
+    "removeComments": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "allowSyntheticDefaultImports": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "importHelpers": true
+  }
+}

@@ -1,0 +1,27 @@
+project: onapp
+ENVIRONMENT: staging # staging|production
+APP_NAME: base-app-v1
+CI_JOB_ID: 1
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 3000
+#  livenessProbe: /hrv-status
+#  readinessProbe: /hrv-status
+
+image:
+  repository: hub.haravan.com/haravan_app/nestjs-baseapp/web
+  tag: staging
+  pullPolicy: Always
+
+mountPath:
+timezone: Asia/Ho_Chi_Minh
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 500Mi
+  requests:
+    cpu: 50m
+    memory: 200Mi

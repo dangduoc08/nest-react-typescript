@@ -1,0 +1,6 @@
+{
+  "extends": "./tsx.json",
+  "compilerOptions": {
+    "sourceMap": false
+  }
+}

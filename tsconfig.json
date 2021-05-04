@@ -1,0 +1,47 @@
+{
+  "include": [
+    "frontend/**/*",
+    "backend/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "*build",
+    "**/*spec.ts"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@store": [
+        "frontend/store"
+      ],
+      "@utils": [
+        "frontend/utils"
+      ],
+      "@containers/*": [
+        "frontend/containers/*"
+      ],
+      "@components/*": [
+        "frontend/components/*"
+      ],
+      "@services/*": [
+        "frontend/services/*"
+      ],
+      "@commons/*": [
+        "frontend/commons/*"
+      ],
+      "@assets/*": [
+        "frontend/assets/*"
+      ]
+    },
+    "baseUrl": ".",
+    "target": "ES2019",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "alwaysStrict": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
+}

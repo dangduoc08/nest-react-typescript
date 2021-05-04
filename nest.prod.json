@@ -1,0 +1,11 @@
+{
+  "extends": "./nest.json",
+  "exclude": [
+    "backend/app.webpack.ts",
+    "**/*spec.ts",
+    "**/*test.ts"
+  ],
+  "compilerOptions": {
+    "sourceMap": false
+  }
+}

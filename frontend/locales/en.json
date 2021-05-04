@@ -1,0 +1,27 @@
+{
+  "header": {
+    "logout": "Logout",
+    "en": "English",
+    "vi": "Vietnamese",
+    "profile": "Profile",
+    "myAccount": "My acccount"
+  },
+  "navigator": {
+    "dashboard": "Dashboard",
+    "integratedChannels": "Integrated Channels",
+    "settings": "Settings",
+    "tiki": "Tiki",
+    "shopee": "Shopee",
+    "lazada": "Lazada"
+  },
+  "notFound": {
+    "addressNotFound": "There’s no page at this address.",
+    "checkURL": "Check the URL and try again."
+  },
+  "notification": {
+    "success": "Request was successful",
+    "info": "Extra information",
+    "warning": "There was something wrong",
+    "error": "Unknown error"
+  }
+}

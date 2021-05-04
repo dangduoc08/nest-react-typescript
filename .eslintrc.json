@@ -1,0 +1,99 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "react",
+    "react-hooks"
+  ],
+  "env": {
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "tsx": true,
+      "modules": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn",
+    "no-var": [
+      2
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "no-unneeded-ternary": [
+      1
+    ],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "arrow-spacing": [
+      1,
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "prefer-const": [
+      1
+    ],
+    "comma-dangle": [
+      1
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "no-dupe-keys": [
+      2
+    ],
+    "eqeqeq": [
+      2,
+      "always"
+    ],
+    "no-console": [
+      1
+    ],
+    "block-spacing": [
+      2
+    ],
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "@typescript-eslint/no-inferrable-types": [
+      0
+    ],
+    "@typescript-eslint/camelcase": [
+      0,
+      {
+        "properties": "never"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      0
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      0
+    ],
+    "@typescript-eslint/no-var-requires": [
+      0
+    ]
+  }
+}
